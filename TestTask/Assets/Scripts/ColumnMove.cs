@@ -11,4 +11,12 @@ public class ColumnMove : MonoBehaviour
     {
         transform.Translate(-speed,0,0);
     }
+    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag.Equals("Player"))
+        {
+            Time.timeScale = 0.0F;
+        }
+    }
 }
