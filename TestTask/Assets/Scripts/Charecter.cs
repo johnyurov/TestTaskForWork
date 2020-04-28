@@ -7,6 +7,9 @@ public class Charecter : MonoBehaviour
     new Rigidbody2D rigidbody;
     SpriteRenderer spriteRenderer;
     Animator animator;
+
+
+    [SerializeField]
     private float jumpForce = 7.0F;
     private void Awake()
     {
