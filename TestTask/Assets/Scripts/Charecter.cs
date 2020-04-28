@@ -7,10 +7,7 @@ public class Charecter : MonoBehaviour
     new Rigidbody2D rigidbody;
     SpriteRenderer spriteRenderer;
     Animator animator;
-    [SerializeField]
-    private float jumpForce = 3.0F;
-    [SerializeField]
-    private float rightForce = 2.0F;
+    private float jumpForce = 7.0F;
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
@@ -28,7 +25,6 @@ public class Charecter : MonoBehaviour
 
     private void Jump()
     {
-        rigidbody.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
-        rigidbody.AddForce(transform.right * rightForce, ForceMode2D.Impulse);
+        rigidbody.velocity = Vector2.up * jumpForce;
     }
 }
