@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class GameOver : MonoBehaviour
 {
@@ -13,12 +15,11 @@ public class GameOver : MonoBehaviour
     {
         if (collision.gameObject.tag == "Lose")
         {
-            Debug.Log("ysdc");  
             Time.timeScale = 0.0F;
+            //SceneManager.LoadScene(1);
         }
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("dfgdc");
             Time.timeScale = 0.0F;
         }
     }
