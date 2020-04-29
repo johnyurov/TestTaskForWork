@@ -23,7 +23,6 @@ public class ColumnMove : MonoBehaviour
                 Debug.Log("ysdc");
                 speed = 0.0F;
             }
-            Time.timeScale = 0.0F;
         }
     }
     

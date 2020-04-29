@@ -23,6 +23,7 @@ public class Charecter : MonoBehaviour
     }
     void Update()
     {
+        animator.Play("Fly");
         if (Input.GetButtonDown("Jump")) Jump();
     }
 
