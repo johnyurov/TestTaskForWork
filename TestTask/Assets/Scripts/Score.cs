@@ -16,7 +16,7 @@ public class Score : MonoBehaviour
 
 
     private static string scoreCount;
-    private static int maximumScore = 0, scoreValue = 0;
+    private static int maximumScore, scoreValue;
     private void Awake()
     {
         if(PlayerPrefs.HasKey("SaveValue"))
@@ -36,7 +36,7 @@ public class Score : MonoBehaviour
     {
         if(collision.gameObject.tag == "Lose")
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
 
@@ -47,6 +47,7 @@ public class Score : MonoBehaviour
     }
     private void Start()
     {
+        scoreValue = 0;
         if (scoreValue > maximumScore)
         {
             maximumScore = scoreValue;

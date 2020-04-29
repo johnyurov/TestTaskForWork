@@ -7,12 +7,24 @@ public class Buttons : MonoBehaviour
 {
     public void Restart()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
     public void Menu()
     {
-        Debug.Log("yes");
+        SceneManager.LoadScene(0);
         //SceneManager.LoadScene(0);
+    }
+    public void PlayGame()
+    {
+        SceneManager.LoadScene(1);
+    }
+    public void Exit()
+    {
+        Application.Quit();
+    }
+    public void Options()
+    {
+
     }
     private void Update()
     {
