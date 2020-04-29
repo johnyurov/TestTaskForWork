@@ -6,8 +6,6 @@ TagManager:
   tags:
   - Lose
   - Score
-  - Restart
-  - Menu
   layers:
   - Default
   - TransparentFX
