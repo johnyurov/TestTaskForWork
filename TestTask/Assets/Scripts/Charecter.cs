@@ -7,13 +7,13 @@ public class Charecter : MonoBehaviour
     new Rigidbody2D rigidbody;
     SpriteRenderer spriteRenderer;
     Animator animator;
-    AudioSource sPlay;
+   
 
 
     private float jumpForce = 8.0F;
     private void Awake()
     {
-        sPlay = GetComponent<AudioSource>();
+        
         rigidbody = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
@@ -24,9 +24,9 @@ public class Charecter : MonoBehaviour
     }
     void Update()
     {
-        animator.Play("Fly");
         
         if (Input.GetButtonDown("Jump")) Jump();
+        animator.Play("Fly");
     }
 
    

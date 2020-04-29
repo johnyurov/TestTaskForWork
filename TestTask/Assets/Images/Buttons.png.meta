@@ -23,6 +23,9 @@ TextureImporter:
   - first:
       213: -7814535901586335685
     second: Buttons_6
+  - first:
+      213: -3243065930256096816
+    second: Buttons_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -123,8 +126,8 @@ TextureImporter:
       name: Buttons_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 891
+        x: 49
+        y: 1039
         width: 586
         height: 125
       alignment: 0
@@ -144,8 +147,8 @@ TextureImporter:
       name: Buttons_1
       rect:
         serializedVersion: 2
-        x: 19
-        y: 748
+        x: 48
+        y: 897
         width: 586
         height: 125
       alignment: 0
@@ -165,8 +168,8 @@ TextureImporter:
       name: Buttons_2
       rect:
         serializedVersion: 2
-        x: 19
-        y: 606
+        x: 48
+        y: 755
         width: 586
         height: 125
       alignment: 0
@@ -186,8 +189,8 @@ TextureImporter:
       name: Buttons_3
       rect:
         serializedVersion: 2
-        x: 20
-        y: 463
+        x: 49
+        y: 613
         width: 586
         height: 125
       alignment: 0
@@ -207,8 +210,8 @@ TextureImporter:
       name: Buttons_4
       rect:
         serializedVersion: 2
-        x: 19
-        y: 321
+        x: 48
+        y: 471
         width: 586
         height: 125
       alignment: 0
@@ -228,8 +231,8 @@ TextureImporter:
       name: Buttons_5
       rect:
         serializedVersion: 2
-        x: 19
-        y: 178
+        x: 48
+        y: 329
         width: 586
         height: 125
       alignment: 0
@@ -249,8 +252,8 @@ TextureImporter:
       name: Buttons_6
       rect:
         serializedVersion: 2
-        x: 20
-        y: 35
+        x: 48
+        y: 195
         width: 586
         height: 125
       alignment: 0
@@ -262,6 +265,27 @@ TextureImporter:
       bones: []
       spriteID: b38d86d20013d8390800000000000000
       internalID: -7814535901586335685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 37
+        width: 734
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1e9eb08b05ef2d0800000000000000
+      internalID: -3243065930256096816
       vertices: []
       indices: 
       edges: []

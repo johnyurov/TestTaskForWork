@@ -6,15 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-    [SerializeField]
-    
+    Animator animator;
     void Start()
     {
-
+        animator = GetComponent<Animator>();
     }
     
     void Update()
     {
-
+        animator.Play("LoseGame");
     }
 }

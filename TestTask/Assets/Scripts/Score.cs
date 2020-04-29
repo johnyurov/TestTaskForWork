@@ -6,12 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
+
+    AudioSource sPlay;
     [SerializeField]
     private Text scoreText;
     
+
     private static string scoreCount;
     public static int scoreValue;
-  
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag.Equals("Score"))
@@ -23,19 +26,15 @@ public class Score : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Lose")
+        if (collision.gameObject.tag == "Lose")
         {
             SceneManager.LoadScene(2);
         }
     }
 
-
-    private void Update()
-    {
-        
-    }
     private void Start()
     {
-       
+        sPlay = GetComponent<AudioSource>();
+        scoreValue = 0;
     }
 }

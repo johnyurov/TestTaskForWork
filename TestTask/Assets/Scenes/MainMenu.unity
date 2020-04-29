@@ -902,9 +902,6 @@ GameObject:
   - component: {fileID: 1078683613}
   - component: {fileID: 1078683612}
   - component: {fileID: 1078683611}
-  - component: {fileID: 1078683610}
-  - component: {fileID: 1078683609}
-  - component: {fileID: 1078683608}
   m_Layer: 0
   m_Name: Charecter
   m_TagString: Player
@@ -912,46 +909,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1078683608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1078683607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c97bc67e939a59d4598e1bb4d7879b0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1078683609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1078683607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51d50df3d0e0c1e46997cd2b6cdf51bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  scoreResult: {fileID: 0}
-  scoreMax: {fileID: 0}
---- !u!114 &1078683610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1078683607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16a39dd7ac0b184459e50ff60166df63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpForce: 8
 --- !u!50 &1078683611
 Rigidbody2D:
   serializedVersion: 4

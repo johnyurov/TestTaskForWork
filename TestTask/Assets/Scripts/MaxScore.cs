@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class MaxScore : MonoBehaviour
 {
+    AudioSource sPlay;
+    [SerializeField]
+    private AudioClip hit;
     [SerializeField]
     private Text scoreResult;
     [SerializeField]
@@ -21,6 +24,7 @@ public class MaxScore : MonoBehaviour
     }
     void Start()
     {
+        GetComponent<AudioSource>().PlayOneShot(hit);
         scoreCount = Score.scoreValue.ToString();
         scoreResult.text = scoreCount;
     }
