@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
@@ -11,13 +12,11 @@ public class Score : MonoBehaviour
     private Text scoreResult;
     [SerializeField]
     private Text scoreMax;
-    [SerializeField]
-    private GameObject pauseMenuUI;
+    
 
 
-    private string scoreCount;
-    private bool visiableTable = false;
-    private int maximumScore = 0, scoreValue = 0;
+    private static string scoreCount;
+    private static int maximumScore = 0, scoreValue = 0;
     private void Awake()
     {
         if(PlayerPrefs.HasKey("SaveValue"))
@@ -37,30 +36,16 @@ public class Score : MonoBehaviour
     {
         if(collision.gameObject.tag == "Lose")
         {
-            if (!visiableTable)
-            {
-               // Resume();
-                Pause();
-            }
-            else
-            {
-            }
+            SceneManager.LoadScene(1);
         }
     }
-    //public void Resume()
-    //{
-    //    pauseMenuUI.SetActive(false);
-    //    Time.timeScale = 1F;
-    //    visiableTable = false;
-    //}
 
-    void Pause()
-    {
-        pauseMenuUI.SetActive(true);
-        Time.timeScale = 0F;
-        visiableTable = true;
-    }
+
     private void Update()
+    {
+        
+    }
+    private void Start()
     {
         if (scoreValue > maximumScore)
         {
@@ -69,10 +54,10 @@ public class Score : MonoBehaviour
             PlayerPrefs.SetInt("SaveValue", maximumScore);
         }
         else
+        {
             scoreMax.text = maximumScore.ToString();
-    }
-    private void Start()
-    {
-        scoreText.text = "Score: " + scoreCount;
+        }
+        scoreResult.text = scoreCount;
+        //scoreText.text = "Score: " + scoreCount;
     }
 }
