@@ -20,7 +20,7 @@ public class ColumnSpawn : MonoBehaviour
             yield return new WaitForSeconds(1);
             Vector2 position = new Vector2(10, Random.Range(-1.7F,1.7F));
             oldPrefab = Instantiate(prefab, position, Quaternion.identity);
-            Destroy(oldPrefab, 15);
+            Destroy(oldPrefab, 20);
         }
     }
 }
