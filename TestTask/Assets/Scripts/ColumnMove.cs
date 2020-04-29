@@ -10,13 +10,21 @@ public class ColumnMove : MonoBehaviour
     void Update()
     {
         transform.Translate(-speed,0,0);
+        
     }
-    
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.tag.Equals("Player"))
+        if (collision.gameObject.tag == "Player")
         {
+            speed = 0.0F;
+            if (gameObject.tag == "Lose")
+            {
+                Debug.Log("ysdc");
+                speed = 0.0F;
+            }
             Time.timeScale = 0.0F;
         }
     }
+    
 }

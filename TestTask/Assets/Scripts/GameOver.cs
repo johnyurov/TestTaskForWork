@@ -4,29 +4,24 @@ using UnityEngine;
 
 public class GameOver : MonoBehaviour
 {
-    new Rigidbody2D rigidbody;
-    Animator animator;
-    SpriteRenderer spriteRenderer;
-
-    private void Awake()
-    {
-        rigidbody = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        animator = GetComponent<Animator>();
-    }
+    
     void Start()
     {
         
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.tag.Equals("Lose"))
+        if (collision.gameObject.tag == "Lose")
         {
-          //  Time.timeScale = 0.0F;
-            animator.Play("LoseGame");
+            Debug.Log("ysdc");  
+            Time.timeScale = 0.0F;
+        }
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("dfgdc");
+            Time.timeScale = 0.0F;
         }
     }
-    
     void Update()
     {
         

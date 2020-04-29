@@ -26,6 +26,7 @@ public class Charecter : MonoBehaviour
         if (Input.GetButtonDown("Jump")) Jump();
     }
 
+   
     private void Jump()
     {
         rigidbody.velocity = Vector2.up * jumpForce;
