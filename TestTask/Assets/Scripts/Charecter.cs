@@ -10,8 +10,7 @@ public class Charecter : MonoBehaviour
     AudioSource sPlay;
 
 
-    [SerializeField]
-    private float jumpForce = 7.0F;
+    private float jumpForce = 8.0F;
     private void Awake()
     {
         sPlay = GetComponent<AudioSource>();

@@ -17,10 +17,8 @@ public class ColumnSpawn : MonoBehaviour
 
         for (; ; )
         {
-            if (gameObject.tag == "Player")
-                break;
-            yield return new WaitForSeconds(2);
-            Vector3 position = new Vector3(10.0F, Random.Range(-1.7F, 1.7F), 0);
+            yield return new WaitForSeconds(1);
+            Vector2 position = new Vector2(10, Random.Range(-1.7F,1.7F));
             oldPrefab = Instantiate(prefab, position, Quaternion.identity);
             Destroy(oldPrefab, 15);
         }

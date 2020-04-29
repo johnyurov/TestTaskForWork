@@ -876,8 +876,8 @@ GameObject:
   - component: {fileID: 1417205892}
   - component: {fileID: 1417205891}
   - component: {fileID: 1417205890}
-  - component: {fileID: 1417205889}
   - component: {fileID: 1417205888}
+  - component: {fileID: 1417205889}
   m_Layer: 0
   m_Name: Charecter
   m_TagString: Player
@@ -906,10 +906,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1417205887}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51d50df3d0e0c1e46997cd2b6cdf51bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 698cb96d7aee42f4d8813099608f9bc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
   scoreResult: {fileID: 2061093090}
   scoreMax: {fileID: 509948073}
 --- !u!114 &1417205890
@@ -924,7 +923,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16a39dd7ac0b184459e50ff60166df63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 8
 --- !u!50 &1417205891
 Rigidbody2D:
   serializedVersion: 4

@@ -8,20 +8,10 @@ public class Score : MonoBehaviour
 {
     [SerializeField]
     private Text scoreText;
-    [SerializeField]
-    private Text scoreResult;
-    [SerializeField]
-    private Text scoreMax;
     
-
-
     private static string scoreCount;
-    private static int maximumScore, scoreValue;
-    private void Awake()
-    {
-        if(PlayerPrefs.HasKey("SaveValue"))
-        maximumScore = PlayerPrefs.GetInt("SaveValue");
-    }
+    public static int scoreValue;
+  
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag.Equals("Score"))
@@ -29,7 +19,6 @@ public class Score : MonoBehaviour
             scoreValue++;
             scoreCount = scoreValue.ToString();
             scoreText.text = "Score: " + scoreCount;
-            scoreResult.text = scoreCount;
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -47,18 +36,6 @@ public class Score : MonoBehaviour
     }
     private void Start()
     {
-        scoreValue = 0;
-        if (scoreValue > maximumScore)
-        {
-            maximumScore = scoreValue;
-            scoreMax.text = maximumScore.ToString();
-            PlayerPrefs.SetInt("SaveValue", maximumScore);
-        }
-        else
-        {
-            scoreMax.text = maximumScore.ToString();
-        }
-        scoreResult.text = scoreCount;
-        //scoreText.text = "Score: " + scoreCount;
+       
     }
 }

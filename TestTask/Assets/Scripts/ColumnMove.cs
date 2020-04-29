@@ -4,25 +4,12 @@ using UnityEngine;
 
 public class ColumnMove : MonoBehaviour
 {
-    [SerializeField]
-    private float speed = 2.0F;
+    
+    private float speed = 0.05F;
 
     void Update()
     {
         transform.Translate(-speed,0,0);
         
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            speed = 0.0F;
-            if (gameObject.tag == "Lose")
-            {
-                speed = 0.0F;
-            }
-        }
-    }
-    
 }
