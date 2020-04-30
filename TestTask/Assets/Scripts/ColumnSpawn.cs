@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ColumnSpawn : MonoBehaviour
@@ -11,10 +10,8 @@ public class ColumnSpawn : MonoBehaviour
     {
         StartCoroutine(SpawnColumn());
     }
-
     private IEnumerator SpawnColumn()
     {
-
         for (; ; )
         {
             yield return new WaitForSeconds(1);

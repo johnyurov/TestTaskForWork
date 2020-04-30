@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
@@ -12,7 +10,6 @@ public class Buttons : MonoBehaviour
     public void Menu()
     {
         SceneManager.LoadScene(0);
-        //SceneManager.LoadScene(0);
     }
     public void PlayGame()
     {
@@ -21,20 +18,5 @@ public class Buttons : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
-    }
-    public void Options()
-    {
-
-    }
-    private void Update()
-    {
-        //if (Input.GetMouseButtonDown(0) && tag.Equals("Restart"))
-        //{
-        //    Restart();
-        //}
-        //if (Input.GetMouseButtonDown(0) && tag.Equals("Menu"))
-        //{
-        //    Restart();
-        //}
     }
 }

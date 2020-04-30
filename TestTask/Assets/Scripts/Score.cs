@@ -1,20 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Score : MonoBehaviour
 {
-
     AudioSource sPlay;
     [SerializeField]
     private Text scoreText;
-    
-
     private static string scoreCount;
     public static int scoreValue;
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag.Equals("Score"))
@@ -31,7 +25,6 @@ public class Score : MonoBehaviour
             SceneManager.LoadScene(2);
         }
     }
-
     private void Start()
     {
         sPlay = GetComponent<AudioSource>();

@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 
 public class GameOver : MonoBehaviour
@@ -11,7 +8,6 @@ public class GameOver : MonoBehaviour
     {
         animator = GetComponent<Animator>();
     }
-    
     void Update()
     {
         animator.Play("LoseGame");
